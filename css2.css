@@ -1,0 +1,60 @@
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div {
+    column-count: 3;
+}
+
+<html>
+  <head>
+    <style>
+
+#content-wrapper{
+  display:table;
+}
+
+#content{
+  display:table-row;
+}
+
+#content>div{
+  display:table-cell
+}
+
+#content-wrapper{
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  position:absolute;
+}
+#nav{
+  width:100px;
+  background:yellow;
+}
+#body{
+  background:blue;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+
+.jumbotron {
+    background-image: url("https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/pembroke-welsh-corgi.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
